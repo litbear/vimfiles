@@ -22,8 +22,8 @@ set helplang=cn
 "关闭兼容模式
 set nocompatible
 "模仿快捷键，如：Ctrl+A全选、Ctrl+C复制、Ctrl+V粘贴等等
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
 behave mswin
 "gvim内部编码
 set encoding=utf-8
