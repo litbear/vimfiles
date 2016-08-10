@@ -2,9 +2,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 "此处规定Vundle的路径
-set rtp+=$VIM/vimfiles/bundle/vundle/
+set rtp+=$HOME/vimfiles/bundle/Vundle.vim
 "此处规定插件的安装路径
-call vundle#rc('$VIM/vimfiles/bundle/')
+call vundle#begin('$HOME/vimfiles/bundle/')
 "中文文档
 Plugin 'asins/vimcdoc'
 "emmet插件
