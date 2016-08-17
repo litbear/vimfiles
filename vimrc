@@ -4,9 +4,15 @@ filetype off                  " required
 "临时文件
 set directory=.,$TEMP
 "此处规定Vundle的路径
-set rtp+=$HOME/vimfiles/bundle/Vundle.vim
+if has("win32") || has("win16")
+  set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+  let path='$HOME/vimfiles/bundle'
+else
+  set rtp+=~/.vim/bundle/vundle/
+  let path=~/.vim/bundle
+endif
 "此处规定插件的安装路径
-call vundle#begin('$HOME/vimfiles/bundle/')
+call vundle#rc(path)
 "中文文档
 Plugin 'asins/vimcdoc'
 "emmet插件
