@@ -1,6 +1,8 @@
 "==================vundle配置=====================
 set nocompatible              " be iMproved, required
 filetype off                  " required
+"临时文件
+set directory=.,$TEMP
 "此处规定Vundle的路径
 set rtp+=$HOME/vimfiles/bundle/Vundle.vim
 "此处规定插件的安装路径
