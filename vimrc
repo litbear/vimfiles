@@ -4,12 +4,12 @@ filetype off                  " required
 "临时文件
 set directory=.,$TEMP
 "此处规定Vundle的路径
-if has("win32") || has("win16")
+if has("win32") 
   set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
   let path='$HOME/vimfiles/bundle'
 else
-  set rtp+=~/.vim/bundle/vundle/
-  let path=~/.vim/bundle
+  set rtp+=~/.vim/bundle/Vundle.vim/
+  let path='~/.vim/bundle'
 endif
 "此处规定插件的安装路径
 call vundle#rc(path)
