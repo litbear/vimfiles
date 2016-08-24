@@ -7,9 +7,14 @@ set directory=.,$TEMP
 if has("win32") 
   set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
   let path='$HOME/vimfiles/bundle'
+
+  "设置终端编码为gvim内部编码encoding
+  set termencoding=cp936
 else
   set rtp+=~/.vim/bundle/Vundle.vim/
   let path='~/.vim/bundle'
+  
+  set termencoding=utf-8
 endif
 "此处规定插件的安装路径
 call vundle#rc(path)
@@ -32,7 +37,7 @@ set nocompatible
 "模仿快捷键，如：Ctrl+A全选、Ctrl+C复制、Ctrl+V粘贴等等
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
-behave mswin
+"behave mswin
 "gvim内部编码
 set encoding=utf-8
 "当前编辑的文件编码
@@ -46,8 +51,7 @@ language messages zh_CN.utf-8
 "解决菜单乱码
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"设置终端编码为gvim内部编码encoding
-set termencoding=cp936
+
 "防止特殊符号无法正常显示
 set ambiwidth=double
 "缩进尺寸为4个空格
