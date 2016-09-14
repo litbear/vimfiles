@@ -16,14 +16,16 @@ else
   
   set termencoding=utf-8
 endif
-"此处规定插件的安装路径
+" 此处规定插件的安装路径
 call vundle#rc(path)
-"中文文档
+" 中文文档
 Plugin 'asins/vimcdoc'
-"emmet插件
+" 树形目录
+Plugin 'VOoM'
+" emmet插件
 Plugin 'mattn/emmet-vim'
 Plugin 'https://github.com/scrooloose/nerdtree'
-"增强状态栏
+" 增强状态栏
 Plugin 'https://github.com/bling/vim-airline'
 
 "call vundle#end()            " required
