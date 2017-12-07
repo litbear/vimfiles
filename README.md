@@ -17,7 +17,9 @@ cd %USERPROFILE%
 
 git clone git@github.com:litbear/vimfiles.git
 
-git submodule update
+cd vimfiles
+
+git submodule update --init --recursive
 
 mklink /H /J "%USERPROFILE%\.vim" "%USERPROFILE%\vimfiles"
 ```
