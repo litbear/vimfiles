@@ -123,6 +123,6 @@ endfunction
 
 "gvim字体设置
 if has("gui_running") "如果在 GUI 环境下运行则设置下面语句
-set guifont=YaHei_Consolas_Hybrid:h18:cGB2312
+set guifont=Microsoft_YaHei_Mono:h18:cGB2312
 endif
 "在 Console 环境下是没有效果的 
